@@ -8,7 +8,6 @@ data <- read.csv("C:/Users/Kanika/Desktop/Loan approval.csv",header = TRUE)
 model <- multinom(Loan.approval~.,data=data)
 summary(model)
 
-
 ########### Only salary
 model <- multinom(Loan.Approval~Salary,data=data)
 summary(model)
@@ -70,7 +69,6 @@ iris_pred
 iris.testLabels
 
 table(iris_pred,iris.testLabels)
-
 
 ########################################### fgl data
 View(fgl)
